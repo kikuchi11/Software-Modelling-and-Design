@@ -1,6 +1,5 @@
 
 Software Modelling
-
 Creation of modifiable but abstract representations of a system in order to communicate ideas
 
 
@@ -52,13 +51,11 @@ Actor: a computer system or organisation
 Use Case: Text descriptions of an actor
 Can be brief
 
-
 Sequence Diagram vs Communication Diagram
 
 Sequence
 Clearly shows times ordering of messages
 Can easily represent the detail of message protocols between objects
-
 Communication
 More layout options
 Clearly shows relationships between object instances
@@ -185,7 +182,6 @@ Performance : execution time, recovery time…
 
 Supportability : testability, maintainability
 
-
 Priorities : 
 Inflexible Constraints
 security, legal compliance
@@ -196,6 +192,55 @@ demo for clients
 Other Goals
 extensible
 
+Architectural Factor Table
+Factor
+Measures and quality scenarios
+Variability
+Impact of factor on stakeholders
+Priority for success
+Difficulty or risk
 
 
+Patterns
+Improves understandability, maintainability, reusability, accessibility to non-experts
 
+Gang of Four (GoF)
+Structural Patterns: Provide a manner to define relationships between classes or objects
+
+Adaptor Pattern 
+Resolve incompatible interfaces (e.g. usb adapter to connect computers and mobile devices)
+Works as the intermediary
+High Cohesion
+
+Composite Pattern
+Creates hierarchical object models (e.g. recursive tree structures of objects)
+Higher Complexity
+
+Facade Pattern
+Wraps access to subsystems
+
+e.g website may need to show heather an item for sale has reached a limited level of stock.  The facade class can include a method which returns a Boolean value to indicate this.
+Facade (set of functions) -> Package A & Package B
+
+
+Behavioural Patterns : Enable manners of communication between classes and objects
+
+Strategy Pattern
+Allows you to add new algorithms without changing structure of code
+e.g. UTurnStrategy, MoveForwardStrategy, HorizontalMoveStrategy
+
+Observer Pattern
+Publisher can dynamical register subscribers and notify them when an even occurs
+e.g. security alarms
+
+
+Creational Patterns : Define ways to instantiate groups of related objects
+
+Singleton Pattern
+Use when a single, global point of access to a limited source is required
+Static
+Define a static method that returns the singleton
+
+Factory Pattern
+Create objects without specifying the type of object
+e.g. sprite -> enemy/player/boss, enemy -> AttackEnemy, sineEnemy
